@@ -16,12 +16,12 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: AuthentificationWrapper(),
+      home: AuthenticationWrapper(),
     );
   }
 }
 
-class AuthentificationWrapper extends StatelessWidget {
+class AuthenticationWrapper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container();
