@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_clean_auth/authentification_service.dart';
+import 'package:firebase_clean_auth/home_page.dart';
+import 'package:firebase_clean_auth/signin_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -43,8 +45,8 @@ class AuthenticationWrapper extends StatelessWidget {
     final firebaseUser = context.watch<User>();
 
     if (firebaseUser != null){
-      return Text("Signed In");
+      return HomePage();
     }
-    return Text("Not signed in");
+    return SignInPage();
   }
 }
