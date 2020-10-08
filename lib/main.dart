@@ -10,6 +10,20 @@ Future <void> main() async{
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Firebase Clean Auth',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: AuthentificationWrapper(),
+    );
+  }
+}
+
+class AuthentificationWrapper extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
     return Container();
   }
 }
